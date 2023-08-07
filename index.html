@@ -1,0 +1,76 @@
+<DOCTYPE html>
+    <html lang="en">
+     <head>
+       <meta charset="UTF-8">
+       <title>Registration Form</title>
+       <link rel="stylesheet" href="styles.css" />
+     </head>
+     <body>
+       <div class="noise-image"></div>
+       <h1 id="title">SunnyCode Survey Form</h1>
+       <p id="description">Thank you for taking the time to help us improve the platform</p>
+       <form id="survey-form">
+       <fieldset>
+        <label id="name-label">Name <input id="name" name="name" type="text" required /></label>
+        <label id="email-label">Email <input id="email" name="email" type="email" required /></label>
+        <label id="number-label">Age <input id="number" name="number" type="number" min="13" max="120" required /></label>
+       </fieldset>
+       
+       <fieldset>
+         <label>Which option best describes your current role?</label>
+          <label for="student"><input id="student" type="radio" name="type" value="e" class="inline" /> Student</label>
+           <label for="full-time"><input id="full-time" type="radio" name="type" value="d" class="inline" /> Full Time Job</label>
+         <label for="prefer"><input id="prefer" type="radio" name="type" value="f" class="inline" /> Prefer not to say</label>
+       </fieldset>
+   
+       <fieldset>
+        
+         <label>Would you recommend freeCodeCamp to a friend?</label>
+         <label for="definitely"><input id="definitely" type="radio" name="role" value="g" class="inline" /> Definitely</label>
+           <label for="maybe"><input id="maybe" type="radio" name="role" value="h" class="inline" /> Maybe </label>
+         <label for="not-sure"><input id="not-sure" type="radio" name="role" value="j" class="inline" /> Not sure</label>
+   
+          
+       </fieldset>
+   
+   
+   
+   
+       <fieldset>
+         <label> What would you like to see improved?  </label>
+         <label for="Front-end-Projects">
+             <input id="Front-end-Projects" type="checkbox" name="Front-end-Projects" class="inline" value="front" />Front-end Projects
+           </label>
+           <label for="Back-end-Projects">
+             <input id="Back-end-Projects" type="checkbox" name="Back-end-projects" class="inline" value="back" />Back-end Projects
+           </label>
+   <label for="Data-Visualization">
+             <input id="Data-Visualization" type="checkbox" name="Data-Visualization" class="inline" value="data" />Data Visualization
+           </label>
+           <label for="Gitter-help-rooms">
+             <input id="Gitter-help-rooms" type="checkbox" name="Gitter-help-rooms" class="inline" value="gitter"/>Gitter help rooms
+            </label>
+            <label for="Forum">     
+             <input id="Forum" type="checkbox" name="forum" class="inline" value="forum" />Forum 
+            </label>
+           
+       </fieldset>
+       
+      <fieldset>
+       <label for="dropdown">What is your favorite feature of SunnyCode?
+         <select id="dropdown">
+             <option value="">(select one)</option>
+               <option value="1">Challenges</option>
+               <option value="2">Projects</option>
+               <option value="3">Community</option>
+               <option value="4">Open Source</option>
+         </select>
+       </label>
+        <label for="Comment">Any comments or suggestions?
+             <textarea id="Comment" name="Comment" value="comment" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+           </label>
+       </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+     </form>
+     </body>
+     </html>
